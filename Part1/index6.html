@@ -1,19 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .map:hover{
+            transform: scale(1.05);
+            transition: transform 0.3s ease-in-out;
+        }
+        .map {
+            transition: transform 0.3s ease-in-out;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            
+        }
+        .whatsapp-icon {
+  display: inline-block; /* Allows setting width and height */
+  position: fixed; /* Fixed position relative to the viewport */
+  bottom: 20px; /* Distance from the bottom */
+  right: 20px; /* Distance from the right */
+  z-index: 999; /* Ensure it's above other elements */
+}
+
+.whatsapp-icon img {
+  width: 50px; /* Adjust the size as needed */
+  height: auto;
+}
+
+/* Optional: Add a hover effect */
+.whatsapp-icon:hover {
+  opacity: 0.8;
+}
+    </style>
     <title>websites links</title>
 </head>
+
 <body style="font-family: Arial, sans-serif; margin: 50px; background-color: rgba(255, 0, 0, 0.562);">
     <h1>Links:</h1>
     <ul style="list-style: square; padding: 0;">
-        <li style="margin: 10px 0;"><a href="https://www.wikipedia.org" target="_blank" style="text-decoration: none; color: rgb(255, 255, 255); font-size: 20px;">Wikipedia</a></li>
-        <li style="margin: 10px 0;"><a href="https://www.github.com" target="_blank" style="text-decoration: none; color: rgb(255, 255, 255); font-size: 20px;">GitHub</a></li>
-        <li style="margin: 10px 0;"><a href="https://www.nytimes.com" target="_blank" style="text-decoration: none; color: rgb(255, 255, 255); font-size: 20px;">The New York Times</a></li>
-        <li style="margin: 10px 0;"><a href="https://www.bbc.com" target="_blank" style="text-decoration: none; color: rgb(255, 255, 255); font-size: 20px;">BBC</a></li>
-        <li style="margin: 10px 0;"><a href="https://www.stackoverflow.com" target="_blank" style="text-decoration: none; color: rgb(255, 255, 255); font-size: 20px;">Stack Overflow</a></li>
+        <li style="margin: 10px 0;"><a href="https://www.wikipedia.org" target="_blank"
+                style="text-decoration: none; color: rgb(255, 255, 255); font-size: 20px;">Wikipedia</a></li>
+        <li style="margin: 10px 0;"><a href="https://www.github.com" target="_blank"
+                style="text-decoration: none; color: rgb(255, 255, 255); font-size: 20px;">GitHub</a></li>
+        <li style="margin: 10px 0;"><a href="https://www.nytimes.com" target="_blank"
+                style="text-decoration: none; color: rgb(255, 255, 255); font-size: 20px;">The New York Times</a></li>
+        <li style="margin: 10px 0;"><a href="https://www.bbc.com" target="_blank"
+                style="text-decoration: none; color: rgb(255, 255, 255); font-size: 20px;">BBC</a></li>
+        <li style="margin: 10px 0;"><a href="https://www.stackoverflow.com" target="_blank"
+                style="text-decoration: none; color: rgb(255, 255, 255); font-size: 20px;">Stack Overflow</a></li>
     </ul>
+    <div class="map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3008.7289749157108!2d74.2707093420734!3d31.46109475655781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391903f1fe2ee7f1%3A0x50b85c038b64e047!2sDesign%20Hub!5e0!3m2!1sen!2s!4v1745522823260!5m2!1sen!2s"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="icon">
+        <a href="https://wa.me/YOUR_PHONE_NUMBER" class="whatsapp-icon" target="_blank" rel="noopener noreferrer">
+            <img src="path/to/whatsapp-icon.png" alt="WhatsApp Chat">
+          </a>
+    </div>
 </body>
+
 </html>
-    
